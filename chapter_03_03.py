@@ -30,3 +30,64 @@ print()
 print('c+d', c+d)
 print('c*3', c*3)
 print("'Test+c[0]'", 'Test'+str(c[0]))
+print()
+
+# 값 비교
+print(c == c[:3]+c[3:])
+print(c)
+print(c[:3]+c[3:])
+print(c[:3])
+print(c[3:])
+print()
+
+# identity
+temp = c
+print(temp, c)
+print(id(c))
+print(id(temp))
+
+# 리스트 수정, 삭제
+c[0] = 4
+print(c)
+c[1:2] = ['a', 'b', 'c']
+print(c)
+c[1] = ['a', 'b', 'c']
+print(c)
+c[1:3] = []
+print(c)
+del c[2]
+print(c)
+
+# 리스트 함수
+a = [5, 2, 3, 1, 4]
+print('a-', a)
+a.append(10)
+print('a-', a)
+a.sort()
+print('a-', a)
+a.reverse()
+print('a-', a)
+print('a-', a.index(3), a[3])
+a.insert(0, 7)
+print('a-', a)
+a.reverse()
+print('a-', a)
+#del a[6]
+#print('a-', a)
+a.remove(10)
+print('a-', a)
+print('a-', a.pop())
+print('a-', a)
+print('a-', a.pop())
+print('a-', a)
+print('a-', a.count(4))
+ex = [8, 9]
+a.extend(ex)
+print('a-', a)
+
+# 삭제: remove, pop, del
+
+# 반복문 활용
+while a:
+    data = a.pop()
+    print(data)
